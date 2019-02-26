@@ -14,7 +14,7 @@ wordToFindLength = lenfn(wordToFindOriginal)
 foundAnagrams = []
 
 with open(sys.argv[1]) as f:
-    lines = f.read().splitlines()
+    lines = f.read().split('\n')
 
 for word in lines:
     if(lenfn(word) == wordToFindLength):    
@@ -27,3 +27,4 @@ finish = time.time()
 duration = round((finish - start)*1000000, 2)
 
 print(duration, ','.join(foundAnagrams), sep=',')
+
