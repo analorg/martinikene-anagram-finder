@@ -25,8 +25,5 @@ for word in lines:
    
 finish = datetime.datetime.now()
 duration = finish - start
-times.append(duration.microseconds)
+
 print(duration.microseconds, ','.join(foundAnagrams), sep=',')
-
-
- 
