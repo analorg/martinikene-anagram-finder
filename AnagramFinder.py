@@ -1,7 +1,7 @@
-import datetime
+import time
 import sys
 
-start = datetime.datetime.now()
+start = time.time()
 
 lenfn = len
 sortfn = sorted
@@ -23,7 +23,7 @@ for word in lines:
             if(sortfn(word) == wordToFind):
                 foundAnagrams.append(word)
    
-finish = datetime.datetime.now()
-duration = finish - start
+finish = time.time()
+duration = round((finish - start)*1000000, 2)
 
-print(duration.microseconds, ','.join(foundAnagrams), sep=',')
+print(duration, ','.join(foundAnagrams), sep=',')
