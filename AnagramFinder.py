@@ -6,7 +6,7 @@ start = datetime.datetime.now()
 lenfn = len
 sortfn = sorted
 
-wordToFindOriginal = ' '.join(sys.argv[2:])
+wordToFindOriginal = ' '.join(sys.argv[2:]).lower()
 wordToFind = sortfn(wordToFindOriginal)
 wordToFindLength = lenfn(wordToFindOriginal)
 
