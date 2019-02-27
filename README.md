@@ -1,4 +1,4 @@
-Find anagrams from list built with Python 3.6.4
+Find anagrams from list built with Python
 
 Run with:
 python3 AnagramFinder.py lemmad.txt aarmatupidaja
